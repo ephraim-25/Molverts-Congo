@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Essai Schema",
+    "const": "essai",
+    "contains": {
+        "type": "object",
+        "properties": {
+            "nom_plante": {
+                "type": "string"
+            },
+            "usage": {
+                "type": "string"
+            },
+            "region_drc": {
+                "type": "string"
+            },
+            "contributeur": {
+                "type": "string"
+            },
+            "date": {
+                "type": "string",
+                "format": "date"
+            }
+        },
+        "required": ["nom_plante", "usage", "region_drc", "contributeur", "date"]
+    }
+}
